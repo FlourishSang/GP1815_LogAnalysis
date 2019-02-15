@@ -1,0 +1,113 @@
+[druid] 2018-12-10 10:48:48,675 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-12-10 10:48:48,695 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-12-10 10:48:49,501 [main           ] WARN  .mapreduce.JobResourceUploader {1} - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+   [druid] 2018-12-10 10:48:49,529 [main           ] INFO  duce.lib.input.FileInputFormat {1} - Total input paths to process : 1
+   [druid] 2018-12-10 10:48:49,650 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - number of splits:1
+   [druid] 2018-12-10 10:48:49,735 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Submitting tokens for job: job_local1658120808_0001
+   [druid] 2018-12-10 10:48:49,931 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - The url to track the job: http://localhost:8080/
+   [druid] 2018-12-10 10:48:49,931 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Running job: job_local1658120808_0001
+   [druid] 2018-12-10 10:48:49,931 [Thread-3       ] INFO  e.hadoop.mapred.LocalJobRunner {1} - OutputCommitter set in config null
+   [druid] 2018-12-10 10:48:49,938 [Thread-3       ] INFO  lib.output.FileOutputCommitter {1} - File Output Committer Algorithm version is 1
+   [druid] 2018-12-10 10:48:49,938 [Thread-3       ] INFO  e.hadoop.mapred.LocalJobRunner {1} - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+   [druid] 2018-12-10 10:48:50,013 [Thread-3       ] INFO  e.hadoop.mapred.LocalJobRunner {1} - Waiting for map tasks
+   [druid] 2018-12-10 10:48:50,013 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - Starting task: attempt_local1658120808_0001_m_000000_0
+   [druid] 2018-12-10 10:48:50,036 [ask Executor #0] INFO  lib.output.FileOutputCommitter {1} - File Output Committer Algorithm version is 1
+   [druid] 2018-12-10 10:48:50,040 [ask Executor #0] INFO  rn.util.ProcfsBasedProcessTree {1} - ProcfsBasedProcessTree currently is supported only on Linux.
+   [druid] 2018-12-10 10:48:50,445 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@e7049f3
+   [druid] 2018-12-10 10:48:50,449 [ask Executor #0] INFO  g.apache.hadoop.mapred.MapTask {1} - Processing split: hdfs://Murphy:8020/logs/2017-05-30:0+1567
+   [druid] 2018-12-10 10:48:50,931 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Job job_local1658120808_0001 running in uber mode : false
+   [druid] 2018-12-10 10:48:50,933 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} -  map 0% reduce 0%
+   [druid] 2018-12-10 10:48:51,050 [ask Executor #0] INFO  e.etl.mapreduce.Etl2HdfsMapper {1} - 输入：3过滤：0输出：65
+   [druid] 2018-12-10 10:48:51,050 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - 
+   [druid] 2018-12-10 10:48:51,144 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} - Task:attempt_local1658120808_0001_m_000000_0 is done. And is in the process of committing
+   [druid] 2018-12-10 10:48:51,155 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - 
+   [druid] 2018-12-10 10:48:51,155 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} - Task attempt_local1658120808_0001_m_000000_0 is allowed to commit now
+   [druid] 2018-12-10 10:48:51,163 [ask Executor #0] INFO  lib.output.FileOutputCommitter {1} - Saved output of task 'attempt_local1658120808_0001_m_000000_0' to hdfs://Murphy:8020/ods/11/11/_temporary/0/task_local1658120808_0001_m_000000
+   [druid] 2018-12-10 10:48:51,163 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - map
+   [druid] 2018-12-10 10:48:51,163 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} - Task 'attempt_local1658120808_0001_m_000000_0' done.
+   [druid] 2018-12-10 10:48:51,163 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - Finishing task: attempt_local1658120808_0001_m_000000_0
+   [druid] 2018-12-10 10:48:51,163 [Thread-3       ] INFO  e.hadoop.mapred.LocalJobRunner {1} - map task executor complete.
+   [druid] 2018-12-10 10:48:51,937 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} -  map 100% reduce 0%
+   [druid] 2018-12-10 10:48:51,937 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Job job_local1658120808_0001 completed successfully
+   [druid] 2018-12-10 10:48:51,945 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Counters: 20
+	File System Counters
+		FILE: Number of bytes read=152
+		FILE: Number of bytes written=278450
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1567
+		HDFS: Number of bytes written=27156
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Map-Reduce Framework
+		Map input records=3
+		Map output records=65
+		Input split bytes=99
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=4
+		Total committed heap usage (bytes)=212336640
+	File Input Format Counters 
+		Bytes Read=1567
+	File Output Format Counters 
+		Bytes Written=27156
+   [druid] 2018-12-10 19:51:14,327 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-12-10 19:51:14,328 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-12-10 19:51:15,132 [main           ] WARN  .mapreduce.JobResourceUploader {1} - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+   [druid] 2018-12-10 19:51:15,202 [main           ] INFO  duce.lib.input.FileInputFormat {1} - Total input paths to process : 1
+   [druid] 2018-12-10 19:51:15,243 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - number of splits:1
+   [druid] 2018-12-10 19:51:15,323 [main           ] INFO  .hadoop.mapreduce.JobSubmitter {1} - Submitting tokens for job: job_local2078586366_0001
+   [druid] 2018-12-10 19:51:15,500 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - The url to track the job: http://localhost:8080/
+   [druid] 2018-12-10 19:51:15,501 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Running job: job_local2078586366_0001
+   [druid] 2018-12-10 19:51:15,502 [Thread-3       ] INFO  e.hadoop.mapred.LocalJobRunner {1} - OutputCommitter set in config null
+   [druid] 2018-12-10 19:51:15,507 [Thread-3       ] INFO  lib.output.FileOutputCommitter {1} - File Output Committer Algorithm version is 1
+   [druid] 2018-12-10 19:51:15,509 [Thread-3       ] INFO  e.hadoop.mapred.LocalJobRunner {1} - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+   [druid] 2018-12-10 19:51:15,564 [Thread-3       ] INFO  e.hadoop.mapred.LocalJobRunner {1} - Waiting for map tasks
+   [druid] 2018-12-10 19:51:15,565 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - Starting task: attempt_local2078586366_0001_m_000000_0
+   [druid] 2018-12-10 19:51:15,582 [ask Executor #0] INFO  lib.output.FileOutputCommitter {1} - File Output Committer Algorithm version is 1
+   [druid] 2018-12-10 19:51:15,586 [ask Executor #0] INFO  rn.util.ProcfsBasedProcessTree {1} - ProcfsBasedProcessTree currently is supported only on Linux.
+   [druid] 2018-12-10 19:51:15,739 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@6f2759fa
+   [druid] 2018-12-10 19:51:15,744 [ask Executor #0] INFO  g.apache.hadoop.mapred.MapTask {1} - Processing split: hdfs://Murphy:8020/logs/2018-11-11/2018-11-11-end.log:0+32947
+   [druid] 2018-12-10 19:51:16,503 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Job job_local2078586366_0001 running in uber mode : false
+   [druid] 2018-12-10 19:51:16,505 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} -  map 0% reduce 0%
+   [druid] 2018-12-10 19:51:16,541 [ask Executor #0] INFO  e.etl.mapreduce.Etl2HdfsMapper {1} - 输入：82过滤：0输出：1590
+   [druid] 2018-12-10 19:51:16,544 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - 
+   [druid] 2018-12-10 19:51:16,558 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} - Task:attempt_local2078586366_0001_m_000000_0 is done. And is in the process of committing
+   [druid] 2018-12-10 19:51:16,567 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - 
+   [druid] 2018-12-10 19:51:16,567 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} - Task attempt_local2078586366_0001_m_000000_0 is allowed to commit now
+   [druid] 2018-12-10 19:51:16,575 [ask Executor #0] INFO  lib.output.FileOutputCommitter {1} - Saved output of task 'attempt_local2078586366_0001_m_000000_0' to hdfs://Murphy:8020/ods/11/11/_temporary/0/task_local2078586366_0001_m_000000
+   [druid] 2018-12-10 19:51:16,576 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - map
+   [druid] 2018-12-10 19:51:16,576 [ask Executor #0] INFO  org.apache.hadoop.mapred.Task  {1} - Task 'attempt_local2078586366_0001_m_000000_0' done.
+   [druid] 2018-12-10 19:51:16,576 [ask Executor #0] INFO  e.hadoop.mapred.LocalJobRunner {1} - Finishing task: attempt_local2078586366_0001_m_000000_0
+   [druid] 2018-12-10 19:51:16,576 [Thread-3       ] INFO  e.hadoop.mapred.LocalJobRunner {1} - map task executor complete.
+   [druid] 2018-12-10 19:51:17,509 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} -  map 100% reduce 0%
+   [druid] 2018-12-10 19:51:17,509 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Job job_local2078586366_0001 completed successfully
+   [druid] 2018-12-10 19:51:17,520 [main           ] INFO  rg.apache.hadoop.mapreduce.Job {1} - Counters: 20
+	File System Counters
+		FILE: Number of bytes read=171
+		FILE: Number of bytes written=278469
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=32947
+		HDFS: Number of bytes written=784323
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+	Map-Reduce Framework
+		Map input records=82
+		Map output records=1590
+		Input split bytes=118
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=4
+		Total committed heap usage (bytes)=211288064
+	File Input Format Counters 
+		Bytes Read=32947
+	File Output Format Counters 
+		Bytes Written=784323
+   

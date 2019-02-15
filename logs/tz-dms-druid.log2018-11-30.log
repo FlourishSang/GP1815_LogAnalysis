@@ -1,0 +1,76 @@
+[druid] 2018-11-30 20:47:41,312 [main           ] ERROR e.etl.mapreduce.Etl2HdfsDriver {1} - 设置输入输出路径异常
+   java.lang.RuntimeException: 输入路径不存在/logs/11/29
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.handleInputOutput(Etl2HdfsDriver.java:75)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.run(Etl2HdfsDriver.java:55)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.main(Etl2HdfsDriver.java:31)
+[druid] 2018-11-30 20:47:41,363 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-11-30 20:47:41,364 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-11-30 20:47:41,400 [main           ] ERROR e.etl.mapreduce.Etl2HdfsDriver {1} - 执行etl异常
+   org.apache.hadoop.mapred.InvalidJobConfException: Output directory not set.
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:138)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:266)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:139)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1290)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1287)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1287)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1308)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.run(Etl2HdfsDriver.java:56)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.main(Etl2HdfsDriver.java:31)
+[druid] 2018-11-30 20:48:55,131 [main           ] ERROR e.etl.mapreduce.Etl2HdfsDriver {1} - 设置输入输出路径异常
+   java.lang.RuntimeException: 输入路径不存在/logs/11/29
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.handleInputOutput(Etl2HdfsDriver.java:75)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.run(Etl2HdfsDriver.java:55)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.main(Etl2HdfsDriver.java:31)
+[druid] 2018-11-30 20:48:55,149 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-11-30 20:48:55,150 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-11-30 20:48:55,165 [main           ] ERROR e.etl.mapreduce.Etl2HdfsDriver {1} - 执行etl异常
+   org.apache.hadoop.mapred.InvalidJobConfException: Output directory not set.
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:138)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:266)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:139)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1290)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1287)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1287)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1308)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.run(Etl2HdfsDriver.java:56)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.main(Etl2HdfsDriver.java:31)
+[druid] 2018-11-30 20:52:42,285 [main           ] ERROR e.etl.mapreduce.Etl2HdfsDriver {1} - 设置输入输出路径异常
+   java.lang.IllegalArgumentException: Pathname /e:/test/log/input from e:/test/log/input is not a valid DFS filename.
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getPathName(DistributedFileSystem.java:197)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.access$000(DistributedFileSystem.java:106)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$22.doCall(DistributedFileSystem.java:1305)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$22.doCall(DistributedFileSystem.java:1301)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getFileStatus(DistributedFileSystem.java:1317)
+	at org.apache.hadoop.fs.FileSystem.exists(FileSystem.java:1424)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.handleInputOutput(Etl2HdfsDriver.java:74)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.run(Etl2HdfsDriver.java:55)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.main(Etl2HdfsDriver.java:31)
+[druid] 2018-11-30 20:52:42,302 [main           ] INFO  conf.Configuration.deprecation {1} - session.id is deprecated. Instead, use dfs.metrics.session-id
+   [druid] 2018-11-30 20:52:42,303 [main           ] INFO  .hadoop.metrics.jvm.JvmMetrics {1} - Initializing JVM Metrics with processName=JobTracker, sessionId=
+   [druid] 2018-11-30 20:52:42,318 [main           ] ERROR e.etl.mapreduce.Etl2HdfsDriver {1} - 执行etl异常
+   org.apache.hadoop.mapred.InvalidJobConfException: Output directory not set.
+	at org.apache.hadoop.mapreduce.lib.output.FileOutputFormat.checkOutputSpecs(FileOutputFormat.java:138)
+	at org.apache.hadoop.mapreduce.JobSubmitter.checkSpecs(JobSubmitter.java:266)
+	at org.apache.hadoop.mapreduce.JobSubmitter.submitJobInternal(JobSubmitter.java:139)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1290)
+	at org.apache.hadoop.mapreduce.Job$10.run(Job.java:1287)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:422)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1657)
+	at org.apache.hadoop.mapreduce.Job.submit(Job.java:1287)
+	at org.apache.hadoop.mapreduce.Job.waitForCompletion(Job.java:1308)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.run(Etl2HdfsDriver.java:56)
+	at org.apache.hadoop.util.ToolRunner.run(ToolRunner.java:70)
+	at com.phone.etl.mapreduce.Etl2HdfsDriver.main(Etl2HdfsDriver.java:31)

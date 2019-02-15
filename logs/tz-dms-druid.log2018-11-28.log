@@ -1,0 +1,12 @@
+[druid] 2018-11-28 20:39:43,095 [main           ] INFO  .httpclient.HttpMethodDirector {1} - I/O exception (java.net.ConnectException) caught when processing request: Connection timed out: connect
+   [druid] 2018-11-28 20:39:43,095 [main           ] INFO  .httpclient.HttpMethodDirector {1} - Retrying request
+   [druid] 2018-11-28 20:39:43,163 [main           ] WARN  mons.httpclient.HttpMethodBase {1} - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+   [druid] 2018-11-28 20:53:27,748 [main           ] INFO  .httpclient.HttpMethodDirector {1} - I/O exception (java.net.ConnectException) caught when processing request: Connection timed out: connect
+   [druid] 2018-11-28 20:53:27,749 [main           ] INFO  .httpclient.HttpMethodDirector {1} - Retrying request
+   [druid] 2018-11-28 20:53:27,815 [main           ] WARN  mons.httpclient.HttpMethodBase {1} - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+   [druid] 2018-11-28 20:57:37,087 [main           ] INFO  .httpclient.HttpMethodDirector {1} - I/O exception (java.net.ConnectException) caught when processing request: Connection timed out: connect
+   [druid] 2018-11-28 20:57:37,087 [main           ] INFO  .httpclient.HttpMethodDirector {1} - Retrying request
+   [druid] 2018-11-28 20:57:58,091 [main           ] INFO  .httpclient.HttpMethodDirector {1} - I/O exception (java.net.ConnectException) caught when processing request: Connection timed out: connect
+   [druid] 2018-11-28 20:57:58,091 [main           ] INFO  .httpclient.HttpMethodDirector {1} - Retrying request
+   [druid] 2018-11-28 20:58:01,165 [main           ] WARN  mons.httpclient.HttpMethodBase {1} - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+   

@@ -1,0 +1,7 @@
+[druid] 2018-11-29 23:40:11,755 [main           ] INFO  org.apache.hadoop.ipc.Client   {1} - Retrying connect to server: Murphy/192.168.44.150:8020. Already tried 0 time(s); maxRetries=45
+   [druid] 2018-11-29 23:40:31,779 [main           ] INFO  org.apache.hadoop.ipc.Client   {1} - Retrying connect to server: Murphy/192.168.44.150:8020. Already tried 1 time(s); maxRetries=45
+   [druid] 2018-11-29 23:40:51,781 [main           ] INFO  org.apache.hadoop.ipc.Client   {1} - Retrying connect to server: Murphy/192.168.44.150:8020. Already tried 2 time(s); maxRetries=45
+   [druid] 2018-11-29 23:41:11,782 [main           ] INFO  org.apache.hadoop.ipc.Client   {1} - Retrying connect to server: Murphy/192.168.44.150:8020. Already tried 3 time(s); maxRetries=45
+   [druid] 2018-11-29 23:41:31,786 [main           ] INFO  org.apache.hadoop.ipc.Client   {1} - Retrying connect to server: Murphy/192.168.44.150:8020. Already tried 4 time(s); maxRetries=45
+   [druid] 2018-11-29 23:52:41,342 [main           ] WARN  mons.httpclient.HttpMethodBase {1} - Going to buffer response body of large or unknown size. Using getResponseBodyAsStream instead is recommended.
+   
